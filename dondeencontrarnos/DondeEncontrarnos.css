@@ -1,7 +1,7 @@
 /*fondo de pagina*/
 body {
   padding-bottom: 20px;
-  background-image: url(../../img/francesa/fondo.jpg);
+   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(./img/fondo.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: 100%;
