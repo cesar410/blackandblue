@@ -1,0 +1,28 @@
+
+
+/*----------------------barra de navegacion----------------------*/
+/*color y tipo de letra en barra de navegacion*/
+.navbar-brand {
+    background: linear-gradient(45deg, rgb(15, 11, 235), rgb(10, 24, 153), rgb(3, 11, 44));
+    /*linear- gradient degradado*/
+    
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /*color al pasar sobre los link*/
+  .navbar-brand:hover {
+    color: rgb(255, 0, 0);
+  }
+  
+  
+  
+  /*color de los enlaces al pasar sobre ellos */
+  .nav-link:hover {
+    background-color: rgb(191, 187, 187);  
+  
+  }
+  
+  #barra:hover{
+    color: black;
+  }
+  
