@@ -1,4 +1,6 @@
-/*fondo de pagina*/
+
+  
+ /*fondo de pagina*/
 body {
   padding-bottom: 20px;
   background-image: url(../../img/mexicana/fondo.jpg);
@@ -32,6 +34,7 @@ body {
 }
 
 
+
 /*color de los enlaces al pasar sobre ellos */
 .nav-link:hover {
   background-color: rgb(191, 187, 187);  
@@ -41,7 +44,6 @@ body {
 #barra:hover{
   color: black;
 }
-
 
 
 
@@ -73,8 +75,6 @@ body {
     }    
 }
 
-
-
 /*---------------------- boton de menu ----------------------*/
 /*color de boton*/
 .btn {
@@ -88,6 +88,18 @@ body {
   color: white;
 }
 
+
+/*---------------------- link que se desplegaran----------------------*/
+/*color de la barra desplegable*/
+.offcanvas-header {
+  background-color: black;
+  color: white;
+}
+
+/*decorracion de del boton*/
+.link {
+  text-decoration: none;
+}
 
 
 /*---------------------- targeta de informacion que desaprece y titulo----------------------*/
@@ -114,7 +126,18 @@ body {
 }
 
 
+/*---------------------- boton de comprar----------------------*/
+/*cambia el color de compra*/
+#VC {
+  color: red;
+}
 
+/*estilo del boton al pasar sobre el boton compra*/
+#VC:hover {
+  cursor: zoom-in;
+  background-color: red;
+  color: rgb(247, 243, 243);
+}
 
 
 /*---------------------- pie de pagina ----------------------*/
