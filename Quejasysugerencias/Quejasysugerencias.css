@@ -1,0 +1,151 @@
+/*fondo de pagina*/
+body {
+  padding-bottom: 20px;
+  background-image: url(../../img/francesa/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  /*font-family: 'Times New Roman', Times, serif;*/
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+
+/*----------------------barra de navegacion----------------------*/
+/*color y tipo de letra en barra de navegacion*/
+.navbar-brand {
+  background: linear-gradient(45deg, rgb(15, 11, 235), rgb(10, 24, 153), rgb(3, 11, 44));
+  /*linear- gradient degradado*/
+  
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*color al pasar sobre los link*/
+.navbar-brand:hover {
+  color: rgb(255, 0, 0);
+}
+
+
+
+/*color de los enlaces al pasar sobre ellos */
+.nav-link:hover {
+  background-color: rgb(191, 187, 187);  
+
+}
+
+#barra:hover{
+  color: black;
+}
+
+
+
+  
+  /*---------------------- titulo del menu ----------------------*/
+  /*color del titulo*/
+  .blockquote {
+    font-size: 44px;
+    background-color: black;
+    color: white;
+    }
+
+    
+@media (max-width: 980px)
+{
+    .blockquote p
+    {
+        height: 100%;
+        width: 100%;
+        font-size: 27px;
+      
+    }    
+}
+
+
+    
+/*---------------------- boton de menu ----------------------*/
+/*color de boton*/
+.btn {
+  background-color: black;
+  color: white;
+}
+
+/*color al pasar sobre el boton*/
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+
+/*---------------------- boton de menu ----------------------*/
+/*color de formulario*/
+form {
+  color: white;
+  width: 600px;
+  margin: auto;
+  background: linear-gradient(45deg, rgb(235, 11, 11), rgb(153, 10, 10), rgb(44, 3, 3));
+  /*linear- gradient degradado*/
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+/*---------------------- targeta de informacion que desaprece y titulo----------------------*/
+/*permite generar una linea de tiempo*/
+@keyframes miAnimacion {
+
+  0% {
+    opacity: 0;
+    /*desaparece*/
+  }
+
+  100% {
+    opacity: 1;
+    /*reaparece*/
+  }
+
+}
+
+/*id de la animacion de desaparecer*/
+#Prueba {
+  animation: miAnimacion 2s linear;
+  /*tiempo de animacion*/
+
+}
+
+
+/*color del boton*/
+#boton {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/*color del boton al pasar sobre el*/
+#boton:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+/*media que ayuada a controlar la anchura*/
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+
+
+/*---------------------- pie de pagina ----------------------*/
+/*color de pie de pagina*/
+.container .d-flex {
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+}

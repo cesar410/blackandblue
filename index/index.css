@@ -1,0 +1,251 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*fondo de pagina*/
+body {
+  padding-bottom: 20px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(./img/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  /*font-family: 'Times New Roman', Times, serif;*/
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+
+/*----------------------barra de navegacion----------------------*/
+/*color y tipo de letra en barra de navegacion*/
+.navbar-brand {
+  background: linear-gradient(45deg, rgb(15, 11, 235), rgb(10, 24, 153), rgb(3, 11, 44));
+  /*linear- gradient degradado*/
+  margin-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*color al pasar sobre los link*/
+.navbar-brand:hover {
+  color: rgb(255, 0, 0);
+}
+
+/*color de los enlaces al pasar sobre ellos */
+.nav-link:hover {
+  background-color: rgb(191, 187, 187);  
+
+}
+
+#barra:hover{
+  color: black;
+}
+
+
+
+/*----------------------carrusel de imagenes ----------------------*/
+/*color de las cajas de texto*/
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*permite generar una linea de tiempo*/
+@keyframes miAnimacion {
+
+  0% {
+    opacity: 0;
+    /*desaparece*/
+  }
+
+  100% {
+    opacity: 1;
+    /*reaparece*/
+  }
+
+}
+
+/*id de la animacion de desaparecer*/
+#Prueba {
+  animation: miAnimacion 2s linear;
+  /*tiempo de animacion*/
+
+}
+
+
+/*---------------------- Tarjeta de lugares ----------------------*/
+/*color de la parte superior de la targeta de texto*/
+.card-header {
+  background-color: wheat;
+}
+
+/*color de la targeta dentro de la targeta de texto*/
+.card {
+  background-color: rgba(255, 255, 255, 0.904);
+  color: rgb(0, 0, 0);
+}
+
+/*color del boton*/
+.btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/*animacion del boton*/
+.btn:hover {
+  background-color: red;
+}
+
+/*color de la parte inferior de la targeta de texto*/
+.card-footer {
+  background-color: wheat;
+}
+
+
+/*---------------------- Tarjeta de menu y vinos ----------------------*/
+/*color del titulos*/
+.tituloM {
+  background-color: rgb(255, 255, 255);
+  position: center;
+  color: rgba(8, 1, 1, 0.938);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/*color del titulos*/
+.tituloC {
+  background-color: rgb(0, 0, 0);
+  position: center;
+  color: rgba(255, 255, 255, 0.938);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/*posiccion del texto*/
+.col-md-6 {
+  text-align: center;
+}
+
+
+
+/*---------------------- opiniones ----------------------*/
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background-color: rgba(244, 246, 247, 0.767);
+
+}
+
+/*medidas del los margenes*/
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/*color de la caja*/
+.marketing .row {
+  background-color: rgba(237, 243, 243, 0.918);
+}
+
+
+/*---------------------- Tarjeta de registro ----------------------*/
+/*color de registro*/
+.container-fluid1 {
+  background-color: rgba(241, 167, 71, 0.274);
+  text-align: center;
+}
+
+/*posiccion del texto dentro*/
+.col-md-8 {
+  text-align: left;
+}
+
+
+/*---------------------- pie de pagina ----------------------*/
+/*color de pie de pagina*/
+footer {
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+}
+
+
+#menuTop {
+  position: absolute;
+  bottom: 0;
+  width: 1000px;
+  height: 50px;
+  background-color: brown;
+}
+
+.nivel1 {
+  float: left;
+  width: 19.2%;
+  text-align: center;
+  line-height: 42px;
+  background: linear-gradient(45deg, #f00, #0f0, #00f);
+  /*linear- gradient degradado*/
+  border: 4px solid #fff;
+}
+
+.nivel1 a {
+  color: #fff;
+}
+
+.nivel1:hover {
+  background: purple;
+}
+
+
+.nivel2 {
+  position: relative;
+  left: -4px;
+  width: 100%;
+  text-align: center;
+  line-height: 42px;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+  background: silver;
+  color: black;
+}
+
+.nivel2:hover {
+  background: blue;
+  transition: background .5s ease-out;
+  /*donde se volvera la trancicion*/
+}
+
+#menuTop ul li ul {
+  display: none;
+  /*permite desaparecer botones*/
+}
+
+#menuTop ul li:hover ul {
+  display: block;
+  /*permite aparecer botones*/
+}
+
+
+
+
+.sketchfab-embed-wrapper{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 30%; /* 16:9 Aspect Ratio*/
+  }
+  .sketchfab-embed-wrapper iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+  }
