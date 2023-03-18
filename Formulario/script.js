@@ -32,8 +32,9 @@ let pass = document.getElementById("contra").value;
 
 
 
+
 if(user === "" || pass === ""){
-Swal.fire({icon: 'error', title: "Error", text: "Ingrese los campos obligatorios",});
+  alert("Error" +" Ingrese los campos obligatorios");
 return false;
 }
 
@@ -42,9 +43,10 @@ return false;
 
 const usuarioEncontrado = usuarios.find(u => u.usuario === user && u.contra === pass);
   if(usuarioEncontrado){
-    window.location = 'inicio.html';
+    window.location = 'paginaPrincipal.html';
   } else {
-    Swal.fire({icon: 'error', title: "Error", text: "Usuario o contraseña incorrectos"});
+    alert("Error" + " Usuario o contraseña incorrectos");
+    
   }
 
    
@@ -60,17 +62,19 @@ function validarregistro(){
     contra = document.getElementById("contraR").value;
 
     if(usuario === "" || contra === ""){
-        Swal.fire({icon: 'error', title: "Error",
-        text: "No se aceptan campos vacíos",});
+      alert("Error" + " No se aceptan campos vacíos");
+       
         return false;
     }else if(usuario.length<5 || usuario.length>18){
-        Swal.fire({icon: 'error', title: "Error", text: "El Usuario debe tener entre 5 a 18 caracteres ",});
+      alert("Error" + " El Usuario debe tener entre 5 a 18 caracteres ");
+       
         return false;
     }else if(contra.length<7 || contra.length>18){
-    Swal.fire({icon: 'error', title: "Error", text: "Las contraseñas debe tener entre 7 a 18 caracteres",});
+      alert("Error" + " Las contraseñas debe tener entre 7 a 18 caracteres ");
+       
     return false;
     }else{
-        Swal.fire({icon: 'info', title: "Creado", text: "Usuario creado",});
+      alert("Creado" + " Usuario creado");
         usuarios.push({usuario: usuario, contra: contra});
         console.log(usuarios);
     }
